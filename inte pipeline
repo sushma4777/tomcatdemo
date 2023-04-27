@@ -1,0 +1,30 @@
+
+stages{
+ stage('scm-checkout'){
+     steps{
+ git branch: 'main', credentialsId: 'git credentials', url: 'https://github.com/sushma4777/tomcatdemo.git'
+  }
+ }
+  stage('code compilation'){
+     steps{
+   sh 'mvn compile'
+       }
+               }
+   stage('test'){
+steps{
+sh 'mvn test'
+}
+}
+stage('package'){
+steps{
+sh 'mvn package'
+}
+}
+stage('tomcat deployment'){
+steps{
+echo "tomcat deployment"
+}
+}
+}
+}
+
