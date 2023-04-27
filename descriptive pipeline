@@ -1,0 +1,22 @@
+
+pipeline{
+agent any
+stages{
+stage('first'){
+steps{
+	echo "rajashekar"
+}
+}
+stage('second'){
+steps{
+       echo "sushma"
+}
+}
+stage('third'){
+steps{
+echo "elizapriscilla"
+}
+}
+}
+}
+
