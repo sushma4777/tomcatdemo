@@ -1,0 +1,30 @@
+pipeline{
+agent any
+stages{
+ stage('scm-checkout'){
+     steps{
+ echo "scm checkout"
+  }
+ }
+  stage('code compilation'){
+     steps{
+   echo "code compilation"
+       }
+               }
+   stage('test'){
+steps{
+echo "test"
+}
+}
+stage('package'){
+steps{
+echo "package"
+}
+}
+stage('tomcat deployment'){
+steps{
+echo "tomcat deployment"
+}
+}
+}
+}
