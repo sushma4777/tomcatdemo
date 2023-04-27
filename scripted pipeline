@@ -1,0 +1,11 @@
+node{
+    stage('first'){
+	echo "rajashekar"
+}
+stage('second'){
+       echo "sushma"
+}
+stage('third'){
+echo "elizapriscilla"
+}
+}
