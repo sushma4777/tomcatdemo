@@ -1,3 +1,8 @@
+pipeline{
+agent any
+tools {
+  maven 'mvn_home'
+}
 
 stages{
  stage('scm-checkout'){
@@ -27,4 +32,5 @@ echo "tomcat deployment"
 }
 }
 }
+
 
